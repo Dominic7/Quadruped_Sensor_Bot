@@ -1,4 +1,4 @@
-#//================================================ file = walkingPython.py =====
+#//================================================ file = Quadruped.py =====
 #//= Notes:
 #//=      Legs are numbered from 0 to 3 where leg[0] is linked to servo ids 0-2, =
 #         leg[1] linked to 3-5, leg[2] linked to 6-8, and leg[3] linked to 9-11  =
@@ -213,6 +213,7 @@ class quadruped:
             else:
                 start += 1
             crawl_gait[i] = (start, -10, 80)
+            count += 1
 
         leg_gait_pos = [5,10,15,0]
         for s in range(steps):
