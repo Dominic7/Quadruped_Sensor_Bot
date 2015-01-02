@@ -1,4 +1,4 @@
-Quadruped_Sensor_Bot
+Quadruped Sensor Bot
 ====================
 
-An autonomous multipurpose Quadruped robot.
+An autonomous/remote-controlled multipurpose Quadruped robot.
