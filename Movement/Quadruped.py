@@ -65,6 +65,8 @@ class joint:
 
     def set_angle(self, angle):
         '''sets angle of servo'''
+        if angle is self.last_angle:
+            return
         delay = max(self.last_angle * 0.0018333, 0.0183)        # calculate delay
         zero = (self.pulse_min + self.pulse_max) / 2            # half-way == 0 degrees
         pulse_width = zero - self.pulse_min                     # maximum pulse to either side
